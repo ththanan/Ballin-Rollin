@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://World/Start.gd" type="Script" id=1]
+[ext_resource path="res://pic.png" type="Texture" id=2]
+[ext_resource path="res://name pic.png" type="Texture" id=3]
+[ext_resource path="res://press to start.png" type="Texture" id=4]
+
+[node name="Start" type="Node2D"]
+position = Vector2( -5, 0 )
+script = ExtResource( 1 )
+
+[node name="Pic" type="Sprite" parent="."]
+position = Vector2( 505, 324 )
+scale = Vector2( 0.37, 0.37 )
+texture = ExtResource( 2 )
+
+[node name="NamePic" type="Sprite" parent="."]
+modulate = Color( 0.92549, 0.415686, 0.415686, 1 )
+position = Vector2( 525, 208 )
+scale = Vector2( 0.619443, 0.608527 )
+texture = ExtResource( 3 )
+
+[node name="PressToStart" type="Sprite" parent="."]
+modulate = Color( 0.67451, 0.654902, 0.654902, 1 )
+position = Vector2( 509, 416 )
+scale = Vector2( 0.350267, 0.376923 )
+texture = ExtResource( 4 )
